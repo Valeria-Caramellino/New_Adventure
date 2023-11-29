@@ -34,10 +34,10 @@ export default{
 @use '../style/style.scss' as*;
 
 .row{
-  height: calc( 100vh - 11rem );
-  padding: 0;
-  margin: 0;
-  background-image: url(../../public/loading_robot.gif);
+  height: $h_page;
+  padding: $zero;
+  margin: $zero;
+  background-image: url(/loading_robot.gif);
   background-repeat: no-repeat;
   background-position: center;  
 }

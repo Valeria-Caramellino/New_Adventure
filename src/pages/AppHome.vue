@@ -91,50 +91,48 @@ export default {
 
 main {
 
-    // min-height: calc( 100vh - 11rem );
-
     .container-fluid {
 
         .row {
 
-            padding: 2rem 0;
-            margin-top: 1rem;
+            padding: $rem_2 $zero;
+            margin-top: $rem_1;
         }
 
         .col-2 {
-            padding: 0;
-            width: 200px;
-            height: 200px;
-            border: 3px solid $black;
+            padding: $zero;
+            width: $px200;
+            height: $px200;
+            border: $px3 solid $black;
             background-color: $orange;
-            margin: 0.5rem;
+            margin: $rem_05;
 
             &:hover {
-                background-color: rgba($color: #ffff, $alpha: 0.7);
+                background-color: rgba($color: $bianco, $alpha: 0.7);
                 cursor: pointer;
             }
 
             .card-header {
-                width: 100%;
-                height: 3.5rem;
+                width: $w100;
+                height: $h_header_card;
                 //text-align: center;
-                padding: 0.75rem;
+                padding: $p_075;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background-color: darkorange;
+                background-color: $darkorange;
 
                 p {
-                    margin: 0;
-                    padding: 0;
+                    margin: $zero;
+                    padding: $zero;
 
                 }
             }
 
             .card-body {
-                max-height: calc(200px - 3.5rem);
-                width: 90%;
-                margin: 0.5rem;
+                max-height: $h_body_card;
+                width: $w90;
+                margin: $rem_05;
                 background-size: contain;
                 background-repeat: no-repeat;
                 background-position: center;

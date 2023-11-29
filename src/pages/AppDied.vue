@@ -31,8 +31,8 @@ export default{
                             {{ store.description }}
                         </p>
                     </div>
-                    <div class="contenitore-bottone">
-                        <button><a href="/home">Rigioca</a></button>
+                    <div class="contenitore-bottone col-12">
+                       <a href="/home" class="col-12">Rigioca</a>
 
                     </div>
                 </div>
@@ -60,24 +60,22 @@ export default{
         .contenitore-bottone{
             margin: 1.5rem 0;
            
-            button{
+            a{
             
             width: 100%;
-            padding: 10px;
+            padding: 10px 40px;
             border: 2px solid $black;
             //color: white;
             background-color: black;
-                
+             color: white;
+                    text-decoration: none;    
                 &:hover{
                     background-color: white;
-                    a{
+                   
                         color: black;
-                    }
+                    
                 }
-                a{
-                    color: white;
-                    text-decoration: none;
-                }
+               
             } 
         }
         

@@ -1,16 +1,47 @@
 @import "bootstrap/scss/bootstrap";
-//colori
-$giallo: #e9f450;
-$blue: #011532;
-$azzurro: #5584bf;
-$bianco: white;
-$viola: rgb(73, 10, 59);
-$orange: orange;
-$black: black;
-//body
+
+//asset body
 body{
     font-family:sans-serif;
     background-color: $orange;
     color: $black;
     
 }
+
+//colori
+$bianco: white;
+$orange: orange;
+$black: black;
+$darkorange: darkorange;
+
+//misure rem
+$rem_1: 1rem;
+$rem_2: 2rem;
+$rem_1-5: 1.5rem;
+$rem_05: 0.5rem;
+$p_075: 0.75rem;
+
+//misure px
+$px200: 200px;
+$px3: 3px;
+$px_5: 5px;
+$zero: 0;
+$px_10: 10px;
+$px_400: 400px;
+$px_20: 20px;
+$px-50: -50px;
+$px_45: 45px;
+
+//misure%
+$w100: 100%;
+$w90: 90%;
+
+//specifiche misure usate in app home
+$h_header_card: 3.5rem;
+$h_body_card: calc(200px - $h_header_card);
+
+//header
+$h_header: 11rem;
+
+//h page usata nel loading play
+$h_page: calc( 100vh - $h_header );

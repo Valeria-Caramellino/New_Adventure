@@ -23,9 +23,8 @@ export default{
 
     <main>
         <div class="container-fluid">
-            <div class="row align-items-center justify-content-around">
-                <!-- <img src="/camminata.gif" alt="loading"> -->
-                <img src="/loading_robot.gif" alt="loading">
+            <div class="row">
+               
             </div>
         </div>
     </main>
@@ -35,18 +34,12 @@ export default{
 @use '../style/style.scss' as*;
 
 .row{
-    background-color: $orange;
-    //background-image: url(../../public/1Lk1.gif);
-    // background-repeat: no-repeat;
-    // background-position: center;
-    // background-size: contain;
-    // min-height: 500px;
-    min-height: calc(100vh - 90px) ;
-
-    img{
-        width: 400px;
-        height: 400px;
-    }
+  height: calc( 100vh - 11rem );
+  padding: 0;
+  margin: 0;
+  background-image: url(../../public/loading_robot.gif);
+  background-repeat: no-repeat;
+  background-position: center;  
 }
 
 </style>

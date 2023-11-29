@@ -20,20 +20,21 @@ export default{
         <AppHeader :title="'Adventure'" />
     </header>
     <main>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
 
-                <div class="col-8 mx-auto p-2">
+                <div class="col-11 col-lg-6 mx-auto p-2">
 
-                    <!-- <h1>☠️</h1> -->
                     <h2>Fine del gioco</h2>
-                    <div class="">
+                    <div class="contenitore-testo">
                         <p v-if="store.description && store.description.length > 0">
                             {{ store.description }}
                         </p>
                     </div>
-                    
-                    <button><a href="/home">Rigioca</a></button>
+                    <div class="contenitore-bottone">
+                        <button><a href="/home">Rigioca</a></button>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -44,31 +45,42 @@ export default{
 <style lang="scss" scoped>
 @use '../style/style.scss' as*;
 .row{
-    min-height: 500px;
     justify-content: center;
     align-items: center;
-    .col-8{
+    .col-11{
         text-align: center;
-        h1{
-            font-size: 60px;
-        }
         h2{
-            font-size: 35px;
+            font-size: 45px;
+            padding: 2rem 0;
         }
-        button{
-            width: 80%;
+        .contenitore-testo{
+           
+            padding: 2rem 0 ;
+        }
+        .contenitore-bottone{
+            margin: 1.5rem 0;
+           
+            button{
+            
+            width: 100%;
             padding: 10px;
             border: 2px solid $black;
-            color: $bianco;
-            background-color: transparent;
-            &:hover{
-                background-color: $black;
-            }
-            a{
-                color: $bianco;
-                text-decoration: none;
-            }
+            //color: white;
+            background-color: black;
+                
+                &:hover{
+                    background-color: white;
+                    a{
+                        color: black;
+                    }
+                }
+                a{
+                    color: white;
+                    text-decoration: none;
+                }
+            } 
         }
+        
     }
 }
 </style>

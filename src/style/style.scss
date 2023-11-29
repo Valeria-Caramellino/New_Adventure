@@ -1,5 +1,12 @@
 @import "bootstrap/scss/bootstrap";
 
+
+//colori
+$bianco: white;
+$orange: orange;
+$black: black;
+$darkorange: darkorange;
+
 //asset body
 body{
     font-family:sans-serif;
@@ -8,29 +15,23 @@ body{
     
 }
 
-//colori
-$bianco: white;
-$orange: orange;
-$black: black;
-$darkorange: darkorange;
-
 //misure rem
-$rem_1: 1rem;
-$rem_2: 2rem;
-$rem_1-5: 1.5rem;
 $rem_05: 0.5rem;
 $p_075: 0.75rem;
+$rem_1-5: 1.5rem;
+$rem_1: 1rem;
+$rem_2: 2rem;
 
 //misure px
-$px200: 200px;
+$px-50: -50px;
+$zero: 0;
 $px3: 3px;
 $px_5: 5px;
-$zero: 0;
 $px_10: 10px;
-$px_400: 400px;
 $px_20: 20px;
-$px-50: -50px;
 $px_45: 45px;
+$px200: 200px;
+$px_400: 400px;
 
 //misure%
 $w100: 100%;

@@ -19,7 +19,7 @@ export default {
         <h1 class="py-2 m-0">{{ title }}</h1>
       </div>
 
-      <div class="col-11 col-md-6 mx-auto text-justify">
+      <div class="col-11 col-md-6 mx-auto text-center">
         <p class="mb-0 p-1">{{ content }}</p>
       </div>
 
@@ -32,12 +32,12 @@ export default {
 @use '../style/style.scss' as*;
 
 .container-fluid {
+  background-color: $black;
+  color: $orange;
   .row {
     height: $h_header;
   }
 
-  background-color: $black;
-  color: $orange;
 
   h1 {
     text-decoration: underline overline;

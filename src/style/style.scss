@@ -8,8 +8,7 @@ $black: black;
 $darkorange: darkorange;
 
 //asset body
-body{
-    //font-family:sans-serif;
+body {
     background-color: $orange;
     color: $black;
     font-family: 'Kanit', sans-serif;
@@ -30,6 +29,7 @@ $px_5: 5px;
 $px_10: 10px;
 $px_20: 20px;
 $px_45: 45px;
+$px_50: 50px;
 $px200: 200px;
 $px_400: 400px;
 
@@ -44,5 +44,5 @@ $h_body_card: calc(200px - $h_header_card);
 //header
 $h_header: 11rem;
 
-//h page usata nel loading play
+//h page usata nelle page home died loading play
 $h_page: calc( 100vh - $h_header );

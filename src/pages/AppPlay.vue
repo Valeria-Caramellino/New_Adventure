@@ -85,13 +85,13 @@ export default {
             background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 20%, rgb(0, 0, 0) 100%);
             text-align: center;
             position: relative;
-            top: $px-50;
+            top: -50px;
             color: $bianco;
         }
 
         .contenitore-bottoni {
             padding-top: $rem_1;
-            margin-top: $px-50;
+            margin-top: -50px;
             display: flex;
             align-items: center;
             justify-content: space-between;

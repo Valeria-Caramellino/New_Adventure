@@ -31,11 +31,11 @@ export default {
 
     <div class="row p-2 align-items-center">
 
-      <div class="col-11 col-md-9 text-center mx-auto">
+      <div class="col-11 col-md-9 text-center mx-auto my">
         <h1 class="py-2 m-0">{{ title }}</h1>
       </div>
 
-      <div class="col-11 col-md-6 mx-auto text-center">
+      <div class="col-10 col-md-6 mx-auto text-center">
         <p class="mb-0 p-1" id="typed-content"></p>
       </div>
 
@@ -55,12 +55,13 @@ export default {
   }
 
 
-  h1 {
-    text-decoration: underline overline;
-
+  .my {
+    border-top: $px3 solid ;
+    border-bottom: $px3 solid;
   }
   p{
     display: inline;
+    font-size: 18px;
   }
 }
 </style>

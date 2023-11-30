@@ -18,7 +18,7 @@ export default{
 
 <template>
     <header>
-        <AppHeader :title="'Adventure'"/>
+        <AppHeader :title="'Adventures'"/>
     </header>
 
     <main>

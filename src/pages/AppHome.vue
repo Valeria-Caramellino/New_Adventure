@@ -50,8 +50,8 @@ export default {
 <template>
     <header>
 
-        <AppHeader :title="'Adventure'"
-            :content='"Benvenuto nel gioco d`avventura testuale in cui la storia è inventate da ChatGPT 😄"' />
+        <AppHeader :title="'Adventures'"
+            :content="`Benvenuto nel gioco d'avventura testuale in cui la storia è inventata da ChatGPT 😄`" />
 
     </header>
     <main>

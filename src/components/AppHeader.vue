@@ -5,6 +5,22 @@ export default {
   props: {
     title: String,
     content: String
+  },
+  mounted(){
+
+    if (this.content){
+
+      var options = {
+        strings: [this.content],
+        typeSpeed: 60,
+        backSpeed: 0,
+        startDelay: 500,
+        showCursor: true,
+      };
+  
+      var typed = new Typed("#typed-content", options);
+    }
+
   }
 }
 
@@ -20,7 +36,7 @@ export default {
       </div>
 
       <div class="col-11 col-md-6 mx-auto text-center">
-        <p class="mb-0 p-1">{{ content }}</p>
+        <p class="mb-0 p-1" id="typed-content"></p>
       </div>
 
     </div>
@@ -42,6 +58,9 @@ export default {
   h1 {
     text-decoration: underline overline;
 
+  }
+  p{
+    display: inline;
   }
 }
 </style>

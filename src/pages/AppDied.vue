@@ -10,13 +10,18 @@ export default {
         return {
             store
         }
+    },
+    mounted() {
+        this.$nextTick(() => {
+            store.decorationText();
+        });
     }
 }
 
 </script>
 <template>
     <header>
-        <AppHeader :title="'Adventure'" />
+        <AppHeader :title="'Adventures'" />
     </header>
 
     <main>
@@ -29,8 +34,9 @@ export default {
 
                     <!-- text -->
                     <div class="contenitore-testo">
-                        <p v-if="store.description && store.description.length > 0">
-                            {{ store.description }}
+                        <p id="typed-text" v-if="store.description && store.description.length > 0">
+                            <!-- {{ store.description }} -->
+                           
                         </p>
                     </div>
 

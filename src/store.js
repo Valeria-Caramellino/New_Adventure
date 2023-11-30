@@ -189,9 +189,33 @@ const store = reactive({
     //recupero url
     store.imgUrl = generate.data[0].url;
     
-  }
-  
- //il loop continua 
+  },
+  //il loop continua 
+
+  decorationText() {
+            
+    if (this.description && this.description.length > 0) {
+        
+      const description = this.description;
+
+      const element = document.getElementById('typed-text');
+
+
+      let currentIndex = 0;
+
+      const intervalId = setInterval(() => {
+
+        element.textContent += description[currentIndex];
+
+        currentIndex++;
+
+        if (currentIndex === description.length) {
+            
+          clearInterval(intervalId);  //Ferma il timer quando il testo è completamente mostrato
+        }
+      }, 60);  //velocità mostra caratteri
+    }
+  },
 });
 
 

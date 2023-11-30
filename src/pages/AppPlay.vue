@@ -2,6 +2,7 @@
 import AppHeader from '../components/AppHeader.vue';
 import store from '../store';
 
+
 export default {
     name: 'AppPlay',
     components: {
@@ -9,16 +10,22 @@ export default {
     },
     data() {
         return {
-            store
+            store 
         }
+    },
+    mounted(){
+        this.$nextTick(() => {
+            store.decorationText();
+        });
     }
 }
+
 
 </script>
 <template>
 
     <header>
-        <AppHeader :title="'Adventure'" />
+        <AppHeader :title="'Adventures'" />
     </header>
 
     <main>
@@ -31,8 +38,8 @@ export default {
 
                     <!-- text -->
                     <div class="contenitore-testo col-12 col-lg-6 mx-auto">
-                        <p v-if="store.description && store.description.length > 0">
-                            {{ store.description }}
+                        <p id="typed-text" v-if="store.description && store.description.length > 0" >
+                            <!-- {{ store.description }} -->
                         </p>
                     </div>
 

@@ -56,6 +56,8 @@ export default {
 .row {
     justify-content: center;
     align-items: center;
+    height: $h_page;
+    overflow-y: auto;
 
     .col-11 {
         text-align: center;

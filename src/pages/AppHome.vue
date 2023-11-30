@@ -39,9 +39,6 @@ export default {
 
             ]
         }
-    },
-    methods: {
-
     }
 }
 
@@ -51,7 +48,7 @@ export default {
     <header>
 
         <AppHeader :title="'Adventures'"
-            :content="`Benvenuto nel gioco d'avventura testuale in cui la storia è inventata da ChatGPT 😄`" />
+            :content="`Benvenuto nel gioco d'avventura testuale in cui la storia è inventata da ChatGPT`" />
 
     </header>
     <main>
@@ -82,7 +79,7 @@ export default {
 
             </div>
         </div>
-
+        
     </main>
 </template>
 
@@ -90,6 +87,9 @@ export default {
 @use '../style/style.scss' as*;
 
 main {
+
+    height: $h_page;
+    overflow-y: auto;
 
     .container-fluid {
 

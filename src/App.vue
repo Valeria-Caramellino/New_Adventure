@@ -24,4 +24,6 @@ export default {
 <style lang="scss" scoped>
 @use './style/style.scss' as*;
 
+
+
 </style>

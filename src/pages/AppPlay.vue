@@ -110,4 +110,35 @@ export default {
         }
     }
 }
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+*::-webkit-scrollbar-track {
+  //border-radius: 5px;
+  background-color: $black;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: $black;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: $black;
+}
+
+*::-webkit-scrollbar-thumb {
+  //border-radius: 5px;
+  background-color: $scroll_sopra;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: $scroll_sopra;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: $scroll_sopra;
+}
+
 </style>
